@@ -21,21 +21,22 @@ Plex Agent plug-in
 plex 自带python2.7 所以下面安装扩展包时 pip 请指定安装路径
 
 ## pip 安装扩展包
-将扩展包安装到 plex自带python2.7的site-packages目录下
-包路径 /volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages
-安装时须使用--target=指定包路径
+- 将扩展包安装到 plex自带python2.7的site-packages目录下
+- 包路径 /volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages
+- 安装时须使用--target=指定包路径
 pip install --target=path packagename
 ## 实例
-pip install --target=/volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages lxml
+- pip install --target=/volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages lxml
+
 ## 所需要扩展包有
-Pillow
-requests
-lxml
+- Pillow
+- requests
+- lxml
 ## php设置
-需要打开gd库
-设置方式
-web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 gd库  
-- imagetool\index.php
+- 需要打开gd库
+### 设置方式
+- web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 gd库  
+### imagetool\index.php
 使用web station 架设起来 
 输入IP+端口 出现黑色页面表示架设成功并可以正常运行
 
@@ -61,16 +62,12 @@ web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 
 
 ## 日本标题样式
 默认：番号
-设置标题样式
-番号
-标题
-番号+标题
 
 # AdultScraper使用
 - 视频源文件命名规范 xxx-000.mp4或xxx 000.mp4 严禁出现其他字符
 
 - 同片多版本或多CD的命名方法 xxx-000.cd1.mp4 、 xxx-000-cd2.mp4
-注意.cd1与-cd2
+- 注意.cd1与-cd2
 
 - 添加资料库后会开始自动扫描所有新库片源
 
