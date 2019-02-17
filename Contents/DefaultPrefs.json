@@ -1,0 +1,43 @@
+[	
+	{
+		"id": "Poster_Cutting_Url",
+		"label": "必填* index.php 路径: 以http开头",
+		"type": "text",
+	"default": "http://192.168.XX.XX:XXXX"
+	},
+	{
+		"id": "Poster_Cutting_X",
+		"label": "裁切像素",
+		"type": "text",
+	"default": "423"
+	},
+	{
+		"id": "Poster_Cutting_W",
+		"label": "封面宽",
+		"type": "text",
+	"default": "800"
+	},
+	{
+		"id": "Poster_Cutting_H",
+		"label": "封面高",
+		"type": "text",
+	"default": "538"
+	},
+	{
+		"id": "Is_jp",
+		"label": "使用日本数据源",
+		"type":"bool",
+	"default":"false"
+	},
+	{
+		"id": "Title_jp",
+		"label": "日本标题样式",
+		"type": "enum",
+		"values": [
+		      "番号",
+		      "标题",
+		      "番号,标题"
+		 ],
+	"default": "番号"
+	}
+]
