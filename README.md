@@ -1,15 +1,11 @@
 # AdultScraper.bundle
 Plex Agent plug-in
 
-=================
-#AdultScraper功能
-=================
+# AdultScraper功能
 1、日本-自动搜刮
 2、日本-手动搜刮列表选择
 
-====================
-#AdultScraper挂取信息
-====================
+# AdultScraper挂取信息
 1、番号
 2、标题
 3、介绍
@@ -20,9 +16,7 @@ Plex Agent plug-in
 8、演员（可头像显示）
 9、海报
 
-=================
-#AdultScraper安装
-=================
+# AdultScraper安装
 1、群晖下 python 2.7
 plex 自带python2.7 所以下面安装pip时候请指定安装路径
 
@@ -51,9 +45,7 @@ web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 
 使用web station 架设起来 
 输入IP+端口 出现黑色页面表示架设成功并可以正常运行
 
-=================
-#AdultScraper设置
-=================
+# AdultScraper设置
 1、必填* index.php 路径: 以http开头：
 表示需要输入你刚才web station架设的imagetool\index.php页面路径
 默认实例是http://192.168.X.XX:XXX需要修改
@@ -80,9 +72,7 @@ web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 
 标题
 番号+标题
 
-=================
-#AdultScraper使用
-=================
+# AdultScraper使用
 1、视频源文件命名规范 xxx-000.mp4或xxx 000.mp4 严禁出现其他字符
 
 2、同片多版本或多CD的命名方法 xxx-000.cd1.mp4 、 xxx-000-cd2.mp4
@@ -91,23 +81,3 @@ web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 
 3、添加资料库后会开始自动扫描所有新库片源
 
 4、扫描完成后会出现无法找到的片源可以手动模式扫描 手动模式寻找的数据源是不一样的
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
