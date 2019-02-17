@@ -1,5 +1,8 @@
 # AdultScraper.bundle
-Plex Agent plug-in
+- 插件使用python2.7编写 尽可能的遵照了pep8规范。
+- 这是第一次使用python语言并编写插件，插件未经过非常严格的逻辑与异常处理使用时请先做测试。
+- 如发现逻辑性问题与BUG请告知，时间与条件允许时会尽可能的去解决。
+- 也希望各位高手能够对插件进行修改并相互交流。
 
 # AdultScraper功能
 - 日本-自动搜刮
@@ -17,6 +20,11 @@ Plex Agent plug-in
 - 海报
 
 # AdultScraper安装
+下载解压后删除文件名-master的部分
+## 插件安装路径
+### 群晖安装路径
+- AdultScraper.bundle 复制到 /Plex/Library/Application Support/Plex Media Server/Plug-ins 目录下
+
 ## 群晖下 python 2.7
 plex 自带python2.7 所以下面安装扩展包时 pip 请指定安装路径
 
