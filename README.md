@@ -47,7 +47,7 @@
 - lxml
 ## php设置
 - 需要打开gd库
-#### 以群晖为例
+#### 以Synology为例
 - web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 gd库  
 
 ## 海报剪切工具（imagetool\index.php）
