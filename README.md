@@ -36,16 +36,17 @@
 - 包路径 /volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages
 - pip install --target=/volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages lxml
 
-## 所需要扩展包有
+## Python 所需要扩展包有
 - Pillow
 - requests
 - lxml
 ## php设置
 - 需要打开gd库
-### 设置方式
+#### 以群晖为例
 - web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 gd库  
-### 海报剪切工具（imagetool\index.php）
-#### 群晖
+
+## 海报剪切工具（imagetool\index.php）
+### 群晖
 - 使用web station + php5.6 架设起来 
 输入IP+端口 出现黑色页面表示架设成功并可以正常运行
 #### linux
