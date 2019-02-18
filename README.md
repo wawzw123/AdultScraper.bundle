@@ -22,8 +22,13 @@
 # AdultScraper安装
 下载解压后删除文件名-master的部分
 ## 插件安装路径
-### 群晖安装路径
-- AdultScraper.bundle 复制到 /Plex/Library/Application Support/Plex Media Server/Plug-ins 目录下
+- AdultScraper.bundle 复制到 Plug-ins 目录下
+### Synology安装路径
+- /Plex/Library/Application Support/Plex Media Server/Plug-ins
+### Linux
+- 安装的位置 .......Plex Media Server/Plug-ins
+### Windows
+- 安装的位置 .......Plex Media Server/Plug-ins
 
 ## PLEX服务端
 - 自带python2.7 所以下面安装python扩展包时 pip 请指定安装路径
@@ -32,7 +37,7 @@
 - 将扩展包安装到 plex自带python2.7的site-packages目录下
 - 安装时须使用--target=指定包路径
 - pip install --target=path packagename
-### 以群晖为例
+### 以Synology为例
 - 包路径 /volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages
 - pip install --target=/volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages lxml
 
@@ -46,7 +51,7 @@
 - web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 gd库  
 
 ## 海报剪切工具（imagetool\index.php）
-### 群晖
+### Synology
 - 使用web station + php5.6 架设起来 
 输入IP+端口 出现黑色页面表示架设成功并可以正常运行
 #### linux
