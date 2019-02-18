@@ -25,15 +25,15 @@
 ### 群晖安装路径
 - AdultScraper.bundle 复制到 /Plex/Library/Application Support/Plex Media Server/Plug-ins 目录下
 
-## 群晖下 python 2.7
-plex 自带python2.7 所以下面安装扩展包时 pip 请指定安装路径
+## PLEX服务端
+- 自带python2.7 所以下面安装python扩展包时 pip 请指定安装路径
 
 ## pip 安装扩展包
 - 将扩展包安装到 plex自带python2.7的site-packages目录下
-- 包路径 /volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages
 - 安装时须使用--target=指定包路径
-pip install --target=path packagename
-## 实例
+- pip install --target=path packagename
+### 以群晖为例
+- 包路径 /volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages
 - pip install --target=/volume1/@appstore/"Plex Media Server"/Resources/Python/lib/python2.7/site-packages lxml
 
 ## 所需要扩展包有
@@ -44,32 +44,39 @@ pip install --target=path packagename
 - 需要打开gd库
 ### 设置方式
 - web station - > PHP设置 -> 选择5.6 -> 在下面的扩展名列表中 勾选 gd库  
-### imagetool\index.php
-使用web station 架设起来 
+### 海报剪切工具（imagetool\index.php）
+#### 群晖
+- 使用web station + php5.6 架设起来 
 输入IP+端口 出现黑色页面表示架设成功并可以正常运行
+#### linux
+- 使用nginx或其他 + php5.6  架设起来 
+- 输入IP+端口 出现黑色页面表示架设成功并可以正常运行
+#### windows
+- 使用WampServer 或其他 架设起来
+- 输入IP+端口 出现黑色页面表示架设成功并可以正常运行
 
 # AdultScraper设置
 ## 必填* index.php 路径: 以http开头：
-表示需要输入你刚才web station架设的imagetool\index.php页面路径
-默认实例是http://192.168.X.XX:XXX需要修改
+- 表示需要输入你刚才web station架设的imagetool\index.php页面路径
+- 默认实例是http://192.168.X.XX:XXX需要修改
 
 ## 裁切像素
-默认：423
-也可根据需要调整
+- 默认：423
+- 也可根据需要调整
 
 ## 封面宽
-默认：800
-也可根据需要调整
+- 默认：800
+- 也可根据需要调整
 
 ## 封面高
-默认：538
-也可根据需要调整
+- 默认：538
+- 也可根据需要调整
 
 ## 使用日本数据源（为后续加入欧美搜刮所使用的判断预留）
-必须勾选否则无法使用！
+- 必须勾选否则无法使用！
 
 ## 日本标题样式
-默认：番号
+- 默认：番号
 
 # AdultScraper使用
 - 视频源文件命名规范 xxx-000.mp4或xxx 000.mp4 严禁出现其他字符
