@@ -245,11 +245,10 @@ class AdultScraperAgent(Agent.Movies):
                             newrole = metadata.roles.new()
                             newrole.name = '%s' % items[0]
                             Log(items)
-                            if len(items) > 1:
-                                isgif = items[1].split('.')
-                                for i in isgif:
-                                    if not i == 'gif':
-                                        newrole.photo = items[1]
+                            if len(items) > 0:
+                                isgif = items[1].split('gif')
+                                if len(isgif) < 2:
+                                    newrole.photo = items[1]
                 '类型'
                 if vid_M == 'M':
                     genre_list = clas_s_data['type']
@@ -279,7 +278,7 @@ class AdultScraperAgent(Agent.Movies):
                         h = Prefs['Poster_Cutting_H']
 
                         tmp = '%s?mode=%s&url=%s&x=%s&w=%s&h=%s' % (
-                            Prefs['Poster_Cutting_Url'], vid_M, image_url,x,w,h)
+                            Prefs['Poster_Cutting_Url'], vid_M, image_url, x, w, h)
                         Log(tmp)
                         poster = requests.get(tmp).content
                     if vid_M == 'A':
@@ -291,7 +290,7 @@ class AdultScraperAgent(Agent.Movies):
                         w = Prefs['Poster_Cutting_W']
                         h = Prefs['Poster_Cutting_H']
                         tmp = '%s?mode=%s&url=%s&x=%s&w=%s&h=%s' % (
-                            Prefs['Poster_Cutting_Url'], vid_M, clas_s_data['imgurl'][0],x,w,h)
+                            Prefs['Poster_Cutting_Url'], vid_M, clas_s_data['imgurl'][0], x, w, h)
                         Log(tmp)
                         poster = requests.get(tmp).content
                     metadata.posters[tmp] = Proxy.Media(poster)
